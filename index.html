@@ -8,9 +8,22 @@
     <style>
       html , body {height: 100%; margin: 0;}
       img { height: 100%;}
+      .container {position:relative;}
+      .container__image {
+        position:absolute;
+        min-width:100%;
+        min-height: 100%;
+        max-width: none;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        
+      }
     </style>
   </head>
   <body>
-    <img src="backdrop.jpg"/>
+    <div class="container">
+    <img src="backdrop.jpg" class="container__image"/>
+    </div>
   </body>
 </html>
